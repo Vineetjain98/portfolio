@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
+    <link rel="stylesheet" type="text/css" href="portfolio.css" />
+    <title>Vineet | Software Engineer</title>
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <h4>Vineet</h4>
+      </div>
+      <ul class="navlinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li><button class="resume-download">Resume</button></li> -->
+      </ul>
+      <div href="javascript:void(0);" class="burger" onclick="showNav()">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+    <main>
+      <section id="about" data-aos="fade-in">
+        <div id="description">
+          <span id="sub-intro">
+            Hi, my name is
+          </span>
+          <h1 id="intro">
+            Vineet K
+          </h1>
+          <p id="main-intro">
+            I am a software engineer and an UI/UX enthusiast who loves building
+            websites and designing
+          </p>
+        </div>
+        <div id="my-links">
+          <a href="#"
+            ><img src="images/youtube.svg" width="30" height="30"
+          /></a>
+          <a href="#"
+            ><img src="images/linkedin.svg" width="30" height="30"
+          /></a>
+          <a href="#"><img src="images/github.svg" width="30" height="30" /></a>
+        </div>
+        <div id="get-in-touch">
+          <button><a href="mailto:someone@example.com">Get in touch</a></button>
+        </div>
+        <!-- <div id="down-arrow">
+          <a href="#skills"
+            ><img src="images/angle-double-down.svg" width="30" height="30"
+          /></a>
+        </div> -->
+      </section>
+      <section id="skills" data-aos="fade-in">
+        <h2 class="section-title">Skills</h2>
+        <div>
+          <ul>
+            <li>
+              <img src="images/html5.svg" width="30" height="30" /><span
+                >HTML</span
+              >
+            </li>
+            <li>
+              <img src="images/CSS3.svg" width="30" height="30" /><span
+                >CSS</span
+              >
+            </li>
+            <li>
+              <img src="images/JavaScript.png" width="30" height="30" /><span
+                >JavaScript</span
+              >
+            </li>
+            <li>
+              <img src="images/angularjs.svg" width="30" height="30" /><span
+                >Angular JS</span
+              >
+            </li>
+            <li>
+              <img src="images/react.png" width="30" height="30" /><span
+                >React</span
+              >
+            </li>
+            <li>
+              <img src="images/nodejs.png" width="30" height="30" /><span
+                >nodejs</span
+              >
+            </li>
+            <li>
+              <img src="images/python.svg" width="30" height="30" /><span
+                >Python</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="projects" data-aos="fade-in">
+        <h2 class="section-title">Projects</h2>
+        <article class="card" data-aos="fade-in">
+          <div class="card-content">
+            <img
+              src="images/dev-connector.jpg"
+              alt="Dev Connector"
+              width="250"
+              height="50%"
+            />
+            <p>
+              This is a social media network made for developers. People can see
+              post, like and view git repositories of one another.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="#"
+              ><img src="images/github.svg" width="30" height="30"
+            /></a>
+            <button class="resume-download">Live</button>
+          </div>
+        </article>
+        <article class="card" data-aos="fade-in">
+          <div class="card-content">
+            <img
+              src="images/iota-app.jpg"
+              alt="App Design"
+              width="250"
+              height="50%"
+            />
+            <p>
+              Smart Electiricity is an IOT based project, where the
+              micro-controllers gives data on electricity consumption and that
+              is shown in UI for the user to track and gain insights. AWS'
+              infrastructure is used for servers and database.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="#"
+              ><img src="images/github.svg" width="30" height="30"
+            /></a>
+            <button class="resume-download">Live</button>
+          </div>
+        </article>
+        <article class="card" data-aos="fade-in">
+          <div class="card-content">
+            <img
+              src="images/smart-meter.jpg"
+              alt="Dev Connector"
+              width="250"
+              height="50%"
+            />
+            <p>
+              This is the design made using XD for an IOT based education
+              platform. Where the users can enroll themselves for the courses
+              and learn.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="#"
+              ><img src="images/github.svg" width="30" height="30"
+            /></a>
+            <button class="resume-download">Live</button>
+          </div>
+        </article>
+      </section>
+      <section id="experience" data-aos="fade-in">
+        <h2 class="section-title">Experience</h2>
+        <div id="experience-container">
+          <div>
+            <ul id="companies">
+              <li>
+                <button
+                  id="syscloud"
+                  onclick="experience('syscloud')"
+                  class="company-indicator"
+                >
+                  Syscloud
+                </button>
+              </li>
+              <li>
+                <button id="iota" onclick="experience('iota')">
+                  Iot Alliance
+                </button>
+              </li>
+              <li>
+                <button id="cloudlogic" onclick="experience('cloudlogic')">
+                  CloudLogic Technologies
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div id="contribution">
+            <h3>Frontend developer @ Syscloud (Jan 2020 - Dec 2020)</h3>
+            <ul id="experiences">
+              <li>
+                Responsibe for the conversion of many pages written in jquery to
+                angularjs for better performance and user experience
+              </li>
+              <li>
+                Optimised the pages by reducing the api calls and thereby load
+                data even faster
+              </li>
+              <li>
+                Created components so that they can be reused thereby reducing
+                inducing reuse of code
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="contact" data-aos="fade-in">
+        <h2 class="section-title">Contact</h2>
+        <p>
+          Although I'm not currently looking for any new opportunities, my inbox
+          is always open. Whether you have a question or just want to say hi,
+          I'll try my best to get back to you!
+        </p>
+        <button class="resume-download">Say Hi</button>
+      </section>
+    </main>
+    <footer>
+      Designed by Vineet
+    </footer>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
