@@ -21,12 +21,13 @@ nav {
 #logo {
   letter-spacing: 3px;
   text-transform: uppercase;
-  padding: 10px;
 }
+
 .navlinks {
   display: flex;
   width: 35%;
   justify-content: space-between;
+  height: 100%;
 }
 .navlinks a {
   color: rgba(256, 256, 256, 0.87);
@@ -78,10 +79,10 @@ section {
 #my-links a {
   padding: 0 30px;
 }
-#get-in-touch {
+.contact {
   padding: 60px;
 }
-#get-in-touch button {
+.get-in-touch {
   display: inline-block;
   color: #03dac6;
   border: 1px solid #03dac6;
@@ -95,11 +96,11 @@ section {
   line-height: 1;
   padding: 1.25rem 1.75rem;
 }
-#get-in-touch button a {
+.get-in-touch a {
   color: #03dac6;
   text-decoration: none;
 }
-#get-in-touch button:hover {
+.get-in-touch:hover {
   transform: scale(1.1);
   background: rgba(100, 255, 218, 0.1);
 }
@@ -234,6 +235,19 @@ button {
   .navlinks {
     width: 50%;
   }
+  #sub-intro {
+    font-size: 3.5vh;
+  }
+  #main-intro {
+    font-size: 4vh;
+    padding: 10px;
+  }
+  #intro {
+    font-size: 15vh;
+  }
+  #skills ul li {
+    flex: 0 0 33%;
+  }
 }
 @media screen and (max-width: 800px) {
   body,
@@ -244,10 +258,11 @@ button {
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 10vh;
+    top: 7vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     background-color: rgba(256, 256, 256, 0.95);
     z-index: 9999;
     transform: translateX(100%);
@@ -290,6 +305,10 @@ button {
     align-items: flex-end;
     padding: 0;
   }
+  #companies li {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
   #experience button {
     width: auto;
     padding: 8px !important;
@@ -322,7 +341,7 @@ button {
   }
   #contact p {
     white-space: normal;
-    padding: 10px;
+    padding: 20px;
     text-align: justify;
   }
 }
