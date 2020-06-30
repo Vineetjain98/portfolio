@@ -5,6 +5,9 @@ AOS.init({
 var showNav = function () {
   var nav = document.querySelector(".navlinks");
   nav.classList.toggle("nav-active");
+  var burgerIcon = document.querySelector("#burger-icon");
+  burgerIcon.classList.toggle("fa-bars");
+  burgerIcon.classList.toggle("fa-times");
 };
 
 var companies = ["syscloud", "iota", "cloudlogic"];
@@ -46,13 +49,18 @@ var experience = function (company) {
       document.getElementById(cmp).classList.remove("company-indicator");
     }
   });
-  document.querySelector("#contribution").innerHTML =
-    "<h3>" +
-    company_info.heading +
-    "</h3>" +
-    '<ul id="experiences">' +
-    contributions +
-    "</ul>";
+  var contributionContainer = document.querySelector("#contribution");
+  contributionContainer.classList.add("pre-animation");
+  setTimeout(function () {
+    contributionContainer.classList.remove("pre-animation");
+    contributionContainer.innerHTML =
+      "<h3>" +
+      company_info.heading +
+      "</h3>" +
+      '<ul id="experiences">' +
+      contributions +
+      "</ul>";
+  }, 500);
 };
 var shiftWindow = function () {
   scrollBy({

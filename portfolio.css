@@ -262,7 +262,7 @@ button {
   .navlinks {
     position: absolute;
     right: 0px;
-    height: 92vh;
+    height: 50vh;
     top: 7vh;
     display: flex;
     flex-direction: column;
@@ -354,4 +354,8 @@ button {
 }
 .nav-active {
   transform: translateX(0%);
+}
+.pre-animation {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
 }
