@@ -181,6 +181,7 @@ section {
   font-size: 14px;
   line-height: 1;
   padding: 20px;
+  transition: border-left 1s ease;
 }
 #experience button:hover {
   background: rgba(100, 255, 218, 0.1);
@@ -322,6 +323,7 @@ button {
     padding: 0px;
     border: none;
     border-bottom: 2px solid rgba(100, 255, 218, 0.3);
+    transition: border-bottom 1s ease;
   }
   .company-indicator {
     border-left: none !important;
