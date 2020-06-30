@@ -1,6 +1,7 @@
 AOS.init({
   easing: "ease-in-quad",
 });
+
 var showNav = function () {
   var nav = document.querySelector(".navlinks");
   nav.classList.toggle("nav-active");
@@ -12,23 +13,22 @@ var contribution = {
     roles: [
       "Responsibe for the conversion of many pages written in jquery to angularjs for better performance and user experience",
       "Optimised the pages by reducing the api calls and thereby load data even faster",
-      "Created components so that they can be reused thereby reducing inducing reuse of code",
+      "Developed multiple components so that they can be reused thereby reducing inducing reuse of code",
     ],
-    heading: "Frontend developer @ Syscloud (Jan 2020 - Dec 2020)",
+    heading: "Frontend developer @ Syscloud (Jan 2020 - Present)",
   },
   iota: {
     roles: [
-      "Mentoring the juniors for project with web technologies",
       "Worked on IOT related projects",
-      "Gave several presentations for Industry 4.0",
+      "Mentoring the juniors for project with web technologies and designing",
+      "Participated in hackathons and managed workshops",
     ],
-    heading: "Full stack developer @ IOT Alliance (Jan 2019 - Dec 2020)",
+    heading: "Full Stack @ IOT Alliance (Jan 2019 - June 2020)",
   },
   cloudlogic: {
     roles: [
       "Created templates for user feedback forms",
-      "Learnt javascript dom manipulations",
-      "Created components so that they can be reused thereby reducing inducing reuse of code",
+      "Learnt javascript DOM manipulations",
     ],
     heading: "Intern  @ Cloud Logic Technologies (Dec 2018 - Dec 2018)",
   },
@@ -62,5 +62,6 @@ var shiftWindow = function () {
   });
   showNav();
 };
+
 if (location.hash) shiftWindow();
 window.addEventListener("hashchange", shiftWindow);
